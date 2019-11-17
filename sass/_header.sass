@@ -1,0 +1,140 @@
+.header
+    &-top
+        background-color: $darkWhite
+        .container
+            justify-content: space-between
+    &-center
+        padding: 21px 0 26px
+    &-bottom
+        background-color: $darkWhite
+        padding: 13px 0 16px
+        .container
+            .row
+                .col-lg-2
+                    &:first-child
+                        .menu
+                            &__text
+                                text-decoration: underline
+                    &:nth-child(4)
+                        margin-top: 8px
+                    &:nth-child(5)
+                        margin-top: 4px
+                        .menu
+                            &__text
+                                color: $darkGreen
+                                text-decoration: underline
+.nav
+    margin-right: auto
+    &-list
+        &__item
+            margin: 0 13px
+        &__link
+            padding: 14px 0
+            +light
+            color: rgba(31, 31, 31, .8)
+            transition: .3s
+            &:hover
+                color: rgba(31, 31, 31, 1)    
+.offer
+    &-btn
+        color: $offerYellow
+        border-bottom: 1px solid $offerYellow
+        font-size: 18px                    
+.logo
+    &__image
+        width: 197px    
+.stores
+    &-contacts
+        padding-top: 4px
+        justify-content: center
+        &__image
+            width: 43px  
+        &__text
+            +light
+            display: block
+            width: 65px
+            color: $headBlack 
+            line-height: 18px
+            margin: 0 10px 0 12px 
+        &__select
+            &-phone
+                width: 41px
+                height: 21px
+                border-radius: 5px
+                background-color: $darkWhite
+                +bold
+                color: #228b22
+                position: relative
+                padding: 0 5px 0 9px
+                &::after
+                    content: url(../img/select-arrow__down.png)
+                    position: absolute
+                    right: 6px
+                &:hover
+                    cursor: pointer
+.our
+    &-slider
+        text-align: center
+    &-contacts
+        &__address
+            margin: 2px 0 4px
+    &-links
+        justify-content: center
+        &__btn
+            position: relative
+            margin-right: 15px
+            &::before
+                content: url(../img/gradient.png)
+                position: absolute
+                width: 30px
+                height: 30px
+                top: -3px
+                left: -32px
+    &-socials
+        &__link
+            margin: 0 4px
+            &:first-child,
+            &:last-child
+                margin-top: -1px
+.applications
+    text-align: center
+    &__text
+        +light
+        color: $headBlack
+        margin: 0 0 5px 0
+        span
+            +bold
+    &__button
+        max-width: 189px
+        height: 46px
+.menu
+    display: flex
+    align-items: center
+    justify-content: center
+    &__text 
+        +medium 
+        color: $headBlack
+        margin: 0 0 0 12px 
+.cart
+    text-align: right
+    position: relative
+    margin-top: 18px
+    &__image
+        width: 27px
+        position: relative
+        z-index: 1
+    &__count
+        position: absolute
+        top: -14px
+        right: -16px
+        border-radius: 50%
+        width: 25px
+        height: 25px
+        background-color: $darkGreen
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $white
+        font-size: 12px
+        font-weight: 500
+        font-family: 'Roboto', sans-serif
