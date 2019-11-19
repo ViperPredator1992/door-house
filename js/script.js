@@ -17,5 +17,16 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         arrows: false
     });
+
+    $(".nav-burger").click(function(){
+        if($(this).next(".nav-list").css("display")=="none") {
+            $(this).next(".nav-list").slideDown();
+            $(".nav-burger").addClass("burger-open");
+        }
+        else {
+            $(".nav-burger").removeClass("burger-open");
+            $(this).next(".nav-list").slideUp();
+        }
+    });
     
 });

@@ -1,0 +1,282 @@
+@media (max-width: 1199px)
+    .menu
+        &-list
+            &__link
+                padding: 14px 10px
+            &__text
+                width: 100px
+                font-size: 14px
+            &__item
+                &:first-child
+                    .menu
+                        &-list
+                            &__link
+                                padding: 15px 10px
+                &:nth-child(4)
+                    .menu
+                        &-list
+                            &__link
+                                padding: 20px 10px
+                    &:hover 
+                        .menu
+                            &-box
+                                top: 80px
+                &:nth-child(5)
+                    .menu
+                        &-list
+                            &__link
+                                padding: 16px 10px
+    .footer
+        &__name                                 
+            font-size: 22px
+        &-title
+            font-size: 18px
+@media (max-width: 1190px)
+    .menu
+        &-list
+            &__item
+                &:hover 
+                    .menu
+                        &-box
+                            min-width: 750px
+                &:nth-child(4) 
+                    .menu
+                        &-inner
+                            width: 100%
+                    .inner
+                        &-list
+                            justify-content: flex-start
+                            &__link
+                                margin: 5px
+        &-inner
+            width: 200px
+            margin-bottom: 15px
+        &-box
+            &__top 
+                .menu
+                    &-inner
+                        width: 100%
+@media (max-width: 991px)
+    .nav
+        position: relative
+        width: 100%
+        &-burger
+            cursor: pointer
+            width: 40px
+            height: 40px
+            position: relative
+            top: 2px
+            left: 10px
+            &__top,
+            &__center,
+            &__bottom
+                width: 36px
+                height: 3px
+                background-color: $black
+                border-radius: 10px
+                position: absolute
+                left: 2px
+                z-index: 10
+                transition: .3s
+            &__top
+                top: 8px
+            &__center
+                top: 16px
+            &__bottom
+                top: 24px
+        &-list
+            display: none
+            flex-direction: column
+            &__item
+                margin: 0
+            &__link
+                padding: 10px
+                border-radius: $radius
+                &:hover
+                    background-color: $darkGreen
+                    color: $white
+    .burger-open
+        .nav
+            &-burger
+                &__top
+                    transform: rotate(45deg)
+                    top: 14px 
+                &__center
+                    opacity: 0
+                &__bottom
+                    transform: rotate(-45deg)
+                    top: 14px
+    .stores
+        &-box
+            min-width: auto
+            max-width: 500px
+    .offer-btn
+        position: absolute
+        top: 5px
+        right: 15px
+    .header
+        &-top 
+            .container
+                position: relative
+        &-bottom
+            position: relative
+    .logo
+        text-align: center
+    .our-slider,
+    .applications
+        margin-top: 10px
+    .menu
+        &-list
+            &__item
+                width: 33.33%
+                &:hover 
+                    .menu
+                        &-box
+                            min-width: 450px
+                &:nth-child(4)
+                    .menu
+                        &-box
+                            right: auto
+                            left: 0
+                            min-width: 390px
+    .cart
+        position: absolute
+        top: 60px
+        right: 25px
+    .footer
+        &__name,
+        &-title,
+        &__title,
+        &-nav
+            text-align: center
+        &__subtitle
+            max-width: 260px
+            text-align: center
+            margin: 0 auto 25px
+        &-socials
+            justify-content: center
+        &__title
+            margin: 0 auto 10px
+        &-nav
+            margin-bottom: 15px
+        &-items,
+        .polovinkin
+            margin-top: 20px 
+        .polovinkin
+            text-align: center   
+    .end
+        .footer-nav
+            margin-bottom: 0
+            padding-bottom: 110px
+    .our-contacts
+        text-align: center     
+@media (max-width: 810px)
+    .stores
+        &-box
+            padding: 15px
+            left: 0
+@media (max-width: 767px)
+    .header
+        &-center
+            padding: 15px 0
+        &-bottom
+            position: static
+        &-top
+            position: relative
+            z-index: 10            
+    .logo
+        max-width: 220px
+        margin: 0 auto 15px
+    .stores
+        &-contacts
+            padding: 10px 0
+            max-width: 400px
+            margin: auto
+        &-box
+            left: 50%
+            transform: translateX(-50%)
+    .our-slider,
+    .applications
+        margin-top: 15px 
+    .cart
+        top: 70px
+        right: 40px       
+    .our
+        &-contacts
+            max-width: 280px
+            margin: auto
+    .menu
+        &-list
+            &__item
+                &:hover
+                    .menu
+                        &-box
+                            min-width: auto
+                            height: 260px
+                            overflow-y: scroll
+                &:nth-child(4)
+                    .inner
+                        &-list
+                            flex-direction: column
+                            align-items: center
+        &-box
+            padding: 15px
+    .footer
+        &-title
+            margin: 0 0 5px 0
+        &-nav
+            margin: 0 auto 25px
+            max-width: 280px
+        &-text
+            margin: auto
+            font-size: 16px
+            line-height: normal
+        &-block
+            max-width: 420px
+            margin: 0 auto 10px
+    .end
+        .footer
+            &-nav
+                padding-bottom: 25px   
+    .breadcrumbs
+        display: none                 
+@media (max-width: 500px)
+    .light-title
+        font-size: 20px
+    .section-top
+        padding: 30px 0
+    .not-found
+        &__link
+            max-width: 280px
+            height: 52px
+    .stores
+        &-box
+            max-width: 280px
+    .menu
+        margin: initial
+        width: 100%
+        &-list
+            flex-direction: column
+            &__item
+                width: auto 
+                &:nth-child(4)
+                    &:hover
+                        .menu
+                            &-box
+                                top: 60px
+            &__link
+                padding: 10px !important
+                width: 200px
+        &-box
+            top: 70px
+@media (max-width: 375px)
+    .cart
+        top: 55px
+        right: 25px
+
+@media (max-height: 700px)
+   .stores
+       &-box
+            height: 180px
+            overflow-y: scroll
+            overflow-x: hidden

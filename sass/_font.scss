@@ -73,4 +73,15 @@
     font-weight: 300;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-display: swap;
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: local('HelveticaNeueCyr-Medium'),
+        url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

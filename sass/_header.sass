@@ -7,22 +7,8 @@
         padding: 21px 0 26px
     &-bottom
         background-color: $darkWhite
-        padding: 13px 0 16px
         .container
-            .row
-                .col-lg-2
-                    &:first-child
-                        .menu
-                            &__text
-                                text-decoration: underline
-                    &:nth-child(4)
-                        margin-top: 8px
-                    &:nth-child(5)
-                        margin-top: 4px
-                        .menu
-                            &__text
-                                color: $darkGreen
-                                text-decoration: underline
+            justify-content: space-between
 .nav
     margin-right: auto
     &-list
@@ -39,14 +25,27 @@
     &-btn
         color: $offerYellow
         border-bottom: 1px solid $offerYellow
-        font-size: 18px                    
+        font-size: 18px 
+        &:hover                   
+            color: $offerYellow
 .logo
     &__image
         width: 197px    
 .stores
     &-contacts
+        position: relative
         padding-top: 4px
         justify-content: center
+        &:hover
+            .stores
+                &-box
+                    display: block
+                &-contacts
+                    &__select
+                        &-phone
+                            cursor: pointer
+                            color: $white
+                            background-color: $darkGreen
         &__image
             width: 43px  
         &__text
@@ -60,24 +59,35 @@
             &-phone
                 width: 41px
                 height: 21px
-                border-radius: 5px
+                border-radius: $radius - 5px
                 background-color: $darkWhite
                 +bold
-                color: #228b22
+                color: $darkGreen
                 position: relative
                 padding: 0 5px 0 9px
+                transition: .2s
                 &::after
                     content: url(../img/select-arrow__down.png)
                     position: absolute
                     right: 6px
-                &:hover
-                    cursor: pointer
+    &-box
+        display: none
+        min-width: 537px
+        width: 100%
+        padding: 19px 28px 21px 23px
+        box-shadow: -1px 10px 16px 2px rgba(71, 71, 70, 0.29)
+        border-radius: $radius
+        background-color: $white
+        position: absolute
+        top: 60px
+        left: 40px
+        z-index: 10
 .our
     &-slider
         text-align: center
     &-contacts
         &__address
-            margin: 2px 0 4px
+            margin: 0 0 5px
     &-links
         justify-content: center
         &__btn
@@ -107,18 +117,9 @@
     &__button
         max-width: 189px
         height: 46px
-.menu
-    display: flex
-    align-items: center
-    justify-content: center
-    &__text 
-        +medium 
-        color: $headBlack
-        margin: 0 0 0 12px 
 .cart
-    text-align: right
     position: relative
-    margin-top: 18px
+    margin-top: 5px
     &__image
         width: 27px
         position: relative
@@ -138,3 +139,137 @@
         font-size: 12px
         font-weight: 500
         font-family: 'Roboto', sans-serif
+.box
+    margin-bottom: 10px
+    position: relative
+    &:last-child
+        margin-bottom: 0
+    &::before
+        content: url(../img/geo.png)
+        position: absolute
+        top: 10px
+        left: 0
+    &-address
+        font-weight: 300
+        color: #040404
+        margin: 0 0 5px
+        font-size: 16px
+        margin-left: 40px
+        strong
+            font-weight: bold 
+        &__phone
+            font-weight: bold
+            color: #040404
+            display: inline-block
+            &:hover
+                color: #040404    
+    &-mode
+        margin: 0
+        color: rgba(4,4,4, .4) 
+        font-size: 12px
+        margin-left: 40px  
+.menu
+    margin-right: auto
+    &-list
+        &__link
+            display: flex
+            align-items: center
+            padding: 13px 20px
+            transition: .3s
+        &__text 
+            +medium 
+            color: $headBlack
+            margin: 0 0 0 12px
+            width: 120px
+            display: block
+        &__image
+            display: block
+        &__item
+            position: relative
+            &:first-child
+                .menu
+                    &-list
+                        &__link
+                            padding: 14px 20px
+            &:last-child
+                .menu
+                    &-list
+                        &__link
+                            padding: 15px 20px
+                        &__text
+                            color: $darkGreen
+                            text-decoration: underline 
+            &:nth-child(4)
+                .menu
+                    &-list
+                        &__link
+                            padding: 17px 20px
+                    &-box
+                        left: auto
+                        right: -200px
+                .inner
+                    &-list
+                        justify-content: space-between
+                        &__link
+                            width: 100px
+                            text-align: center
+                &:hover
+                    .inner
+                        &-list          
+                            &__link
+                                display: flex
+                                flex-direction: column-reverse
+                                align-items: center
+            &:hover
+                .menu
+                    &-box
+                        display: block
+                    &-list
+                        &__link
+                            background-color: $white
+                        &__text
+                           color: $darkGreen 
+                           text-decoration: underline
+    &-box  
+        display: none
+        position: absolute
+        top: 78px
+        left: 0                          
+        background-color: $white
+        min-width: 900px
+        width: 100%
+        padding: 20px 24px 40px 18px 
+        z-index: 20
+        box-shadow: -1px 10px 16px 2px rgba(71, 71, 70, 0.1)
+        border-radius: 0 0 $radius $radius
+        &__top
+            .menu
+                &-inner
+                    max-width: 410px
+                    margin-bottom: 25px
+                    .inner
+                        &-list
+                            &__item
+                                display: inline-block
+                            &__link
+                                text-decoration: underline
+        &__bottom
+            justify-content: space-between
+    &-inner
+        &__title 
+            margin: 0 0 20px
+            color: #171717
+            font-size: 12px
+            font-weight: bold
+            text-transform: uppercase
+            letter-spacing: 1.2px                 
+.inner
+    &-list
+        &__item
+            margin-right: 3px
+            margin-bottom: 3px          
+        &__link
+            color: #323232
+            +light 
+        &__image
+            display: block

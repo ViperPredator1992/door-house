@@ -57,19 +57,37 @@
         <div class="header-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
                         <a href="/" class="logo">
                             <img src="./img/logo.png" alt="logo" class="logo__image">
                         </a>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
                         <div class="stores-contacts flex flex-center">
                             <img class="stores-contacts__image" src="./img/doors.png" alt="doors">
                             <span class="stores-contacts__text">Контакты магазинов</span>
-                            <div class="stores-contacts__select-phone">7</div>
+                            <div class="stores-contacts__select-phone">4</div>
+                            <div class="stores-box">
+                                <div class="box">
+                                    <p class="box-address">ул. Эмилии Алексеевой, д. 110Д, <strong>тел. <a href="tel:+7 (3852) 57-13-81" class="box-address__phone">+7 (3852) 57-13-81</a></strong></p>
+                                    <p class="box-mode">Режим работы: ПН-ПТ 09:00-18:00, СБ 09:00-17:00, ВС 10:00-17:00</p>
+                                </div>
+                                <div class="box">
+                                    <p class="box-address">ул. Балтийская,д. 2, <strong>тел. <a href="tel:+7 (3852) 59-01-12" class="box-address__phone">+7 (3852) 59-01-12</a></strong></p>
+                                    <p class="box-mode">Режим работы: ПН-ПТ 10:00-19:00, СБ-ВС 10:00-17:00</p>
+                                </div>
+                                <div class="box">
+                                    <p class="box-address">ул. Попова д.150Б, <strong>тел. <a href="tel:+7 (3852) 57-13-80" class="box-address__phone">+7 (3852) 57-13-80</a></strong></p>
+                                    <p class="box-mode">Режим работы: ПН-ПТ 10:00-19:00, СБ-ВС 10:00-17:00</p>
+                                </div>
+                                <div class="box">
+                                    <p class="box-address">ул. Гоголя, д.129, <strong>тел. <a href="tel:+7 (3852) 57-36-06" class="box-address__phone">+7 (3852) 57-36-06</a></strong></p>
+                                    <p class="box-mode">Режим работ: ПТ-ПТ 10:00-19:00, СБ 10:00-17:00. ВС выходной</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
                         <div class="our-slider">
                             <div class="our-slider__item">
                                 <div class="our-contacts">
@@ -105,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
                         <div class="applications">
                             <p class="applications__text">Принимаем заявки с сайта <span>24/7</span></p>
                             <button class="applications__button button">Бесплатный замер</button>
@@ -115,45 +133,485 @@
             </div>
         </div>
         <div class="header-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <a href="#" class="menu">
-                            <img src="./img/interior-door.png" alt="interior-door" class="menu__image">
-                            <p class="menu__text">Межкомнатные двери</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="#" class="menu">
-                            <img src="./img/entrance-doors.png" alt="entrance-doors" class="menu__image">
-                            <p class="menu__text">Входные <br> двери</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="#" class="menu">
-                            <img src="./img/interior-arches.png" alt="interior-arches" class="menu__image">
-                            <p class="menu__text">Арки межкомнатные</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="#" class="menu">
-                            <img src="./img/door-furniture.png" alt="door-furniture" class="menu__image">
-                            <p class="menu__text">Дверная фурнитура</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="#" class="menu">
-                            <img src="./img/sell-out.png" alt="sell-out" class="menu__image">
-                            <p class="menu__text">Распродажа</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="#" class="cart" id="cart">
-                            <img src="./img/cart.png" alt="cart" class="cart__image">
-                            <div class="cart__count">10</div>
-                        </a>
-                    </div>
-                </div>
+            <div class="container flex flex-center">
+                <nav class="menu">
+                    <ul class="menu-list list flex flex-center">
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">
+                                <img src="./img/interior-door.png" alt="interior-door" class="menu-list__image">
+                                <span class="menu-list__text">Межкомнатные двери</span>
+                            </a> 
+                            <!-- /.menu-list__link -->
+                            <div class="menu-box">
+                                <div class="menu-box__top">
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Производитель</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Estet</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">AxelDoors</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Profildoors</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Дубрава</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">La Stella</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Сибирь</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Профиль</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Владимирская фабрика дверей</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Aquadoor</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Гармошки</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-box__bottom flex">
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Мариал</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Экошпон</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Шпонированные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Ламинированные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Эмаль</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Экотекс</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Soft Wood</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">ПВХ</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Массив сосны</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Пластиковые двери</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Цвет</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Белый</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Бежевый</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Светлый</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Серый</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Темный</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Коричневый</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Назначение</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В ванную комнату и туалет</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В кухню</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В коттедж</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Офисные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Для бани и сауны</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В гостинную</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В зал</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В детскую</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Стиль</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Современный</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Хай Тек</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Прованс</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Модерн</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Классика</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Тип</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Глухие</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Остекленные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Цена</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Эконом (500-4000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Стандарт (4001-12000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Премиум (12001-50000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /.menu-list__item -->
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">
+                                <img src="./img/entrance-doors.png" alt="entrance-doors" class="menu-list__image">
+                                <span class="menu-list__text">Входные <br> двери</span>
+                            </a> 
+                            <!-- /.menu-list__link -->
+                            <div class="menu-box">
+                                <div class="menu-box__top">
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Производитель</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Torex</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Центурион</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Chenfeng</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Цитадель</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Термо Дверь</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Estet</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-box__bottom flex">
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Страна</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Российские</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Китайские</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Назначение</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В квартиру</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">В дом</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Тип</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Двухстворчатые</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Противопожарные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Строительные</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                    <div class="menu-inner">
+                                        <p class="menu-inner__title">Цена</p>
+                                        <ul class="inner-list list">
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Эконом (2500-13000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Стандарт (13001-35000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                            <li class="inner-list__item">
+                                                <a href="#" class="inner-list__link">Премиум (35001-90000 руб.)</a> 
+                                                <!-- /.inner-list__link -->
+                                            </li>
+                                            <!-- /.inner-list__item -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /.menu-list__item -->
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">
+                                <img src="./img/interior-arches.png" alt="interior-arches" class="menu-list__image">
+                                <span class="menu-list__text">Арки межкомнатные</span>
+                            </a> 
+                            <!-- /.menu-list__link -->
+                        </li>
+                        <!-- /.menu-list__item -->
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">
+                                <img src="./img/door-furniture.png" alt="door-furniture" class="menu-list__image">
+                                <span class="menu-list__text">Дверная фурнитура</span>
+                            </a> 
+                            <!-- /.menu-list__link -->
+                            <div class="menu-box">
+                                <div class="menu-inner">
+                                    <ul class="inner-list list flex">
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Ручки
+                                                <img src="./img/layers1.png" alt="layers1" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Накладки и фиксаторы
+                                                <img src="./img/layers2.png" alt="layers2" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Замки
+                                                <img src="./img/layers3.png" alt="layers3" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Защелки
+                                                <img src="./img/layers4.png" alt="layers4" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Петли
+                                                <img src="./img/layers5.png" alt="layers5" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Цилиндры
+                                                <img src="./img/layers6.png" alt="layers6" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Ограничители
+                                                <img src="./img/layers7.png" alt="layers7" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                        <li class="inner-list__item">
+                                            <a href="#" class="inner-list__link">Раздвижные механизмы
+                                                <img src="./img/layers8.png" alt="layers8" class="inner-list__image">
+                                            </a> 
+                                            <!-- /.inner-list__link -->
+                                        </li>
+                                        <!-- /.inner-list__item -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /.menu-list__item -->
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">
+                                <img src="./img/sell-out.png" alt="sell-out" class="menu-list__image">
+                                <span class="menu-list__text">Распродажа</span>
+                            </a> 
+                            <!-- /.menu-list__link -->
+                        </li>
+                        <!-- /.menu-list__item -->
+                    </ul>
+                    <!-- /.menu-list list -->
+                </nav>
+                <a href="#" class="cart" id="cart">
+                    <img src="./img/cart.png" alt="cart" class="cart__image">
+                    <div class="cart__count">10</div>
+                </a>
             </div>
         </div>
     </header>
@@ -186,7 +644,156 @@
     </section>
     <footer class="footer">
         <div class="container">
-
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <a href="/" class="logo">
+                        <img src="./img/logo.png" alt="logo" class="logo__image">
+                    </a>
+                    <p class="footer__name">ООО "Дом Дверей"</p>
+                    <span class="footer__subtitle">Входные и межкомнатные двери 
+                            от производителя в Барнауле</span>
+                    <p class="footer-title">Вступите в наши группы:</p>
+                    <div class="footer-socials flex flex-center">
+                        <a href="#" target="_blank" class="footer-socials__link">
+                            <img src="./img/vk.png" alt="vk" class="footer-socials__image">
+                        </a>
+                        <a href="#" target="_blank" class="footer-socials__link">
+                            <img src="./img/instagram.png" alt="instagram" class="footer-socials__image">
+                        </a>
+                        <a href="#" target="_blank" class="footer-socials__link">
+                            <img src="./img/facebook.png" alt="facebook" class="footer-socials__image">
+                        </a>
+                        <a href="#" target="_blank" class="footer-socials__link">
+                            <img src="./img/odnoklassniki.png" alt="odnoklassniki" class="footer-socials__image">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 end">
+                    <h6 class="footer__title">Информация</h6>
+                    <ul class="list footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">О компании</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Оплата и доставка</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Установка дверей</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Гарантии</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Отзывы о нас</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Акции и скидки</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h6 class="footer__title">Каталог</h6>
+                    <ul class="list footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Межкомнатные двери</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Входные двери</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Арки межкомнатные</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Дверная фурнитура</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Распродажа</a> 
+                            <!-- /.footer-nav__link -->
+                        </li>
+                        <!-- /.footer-nav__item -->
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <h6 class="footer__title">Контакты</h6>
+                    <div class="our-contacts">
+                        <a href="tel:+7 (3852) 57-13-81" class="our-contacts__phones our-phones">+7 (3852) 57-13-81</a>
+                        <p class="our-contacts__address our-address">ул. Эмилии Алексеевой, д. 110 Д</p>
+                    </div>
+                    <div class="our-links flex">
+                        <a href="#" class="our-links__btn our-btn">Заказать звонок</a>
+                        <div class="our-socials flex flex-center">
+                            <a href="https://wa.me/+380975345421" target="_blank" class="our-socials__link">
+                                <img src="./img/whatsapp.png" alt="whatsapp">
+                            </a>
+                            <a href="viber://chat?number=+380975345421" target="_blank" class="our-socials__link">
+                                <img src="./img/viber.png" alt="viber">
+                            </a>
+                            <a href="https://telegram.me/SemenovAlexander92" target="_blank" class="our-socials__link">
+                                <img src="./img/telegram.png" alt="telegram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row">
+                <div class="col-lg-7 col-md-6 col-sm-6">
+                    <a href="#" target="_blank" class="polovinkin">
+                        <img src="./img/it-logo.png" alt="it-logo" class="polovinkin__image">
+                    </a>
+                    <div class="footer-text">ООО "Дом Дверей" &copy; 2005-2019 Зарегистрированная торговая марка. 
+                            Все права защищены. Информация на сайте не является публичной офертой. 
+                            Подробную информацию узнавайте по телефонам на сайте.</div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="footer-items">
+                        <h6 class="footer__title">Наши магазины</h6>
+                        <div class="footer-block">
+                            <div class="footer-block__item">
+                                <p class="footer-block__address">ул. Эмилии Алексеевой, д. 110Д,  тел. <a href="tel:+7 (3852) 57-13-81" class="footer-block__phone">+7 (3852) 57-13-81</a></p>
+                                <span class="footer-block__open">ПН-ПТ 09:00-18:00, СБ 09:00-17:00, ВС 10:00-17:00</span>
+                            </div>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-block__item">
+                                <p class="footer-block__address">ул. Балтийская,д. 2, тел. <a href="tel:+7 (3852) 59-01-12" class="footer-block__phone">+7 (3852) 59-01-12</a></p>
+                                <span class="footer-block__open">ПН-ПТ 10:00-19:00, СБ-ВС 10:00-17:00</span>
+                            </div>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-block__item">
+                                <p class="footer-block__address">ул. Попова д. 150Б, тел. <a href="tel:+7 (3852) 57-13-80" class="footer-block__phone">+7 (3852) 57-13-80</a></p>
+                                <span class="footer-block__open">ПТ-ПТ 10:00-19:00, СБ-ВС 10:00-17:00</span>
+                            </div>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-block__item">
+                                <p class="footer-block__address">ул. Гоголя, д.129, тел. <a href="tel:+7 (3852) 57-36-06" class="footer-block__phone">+7 (3852) 57-36-06</a></p>
+                                <span class="footer-block__open">ПТ-ПТ 10:00-19:00, СБ 10:00-17:00. ВС выходной</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
