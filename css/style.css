@@ -9145,17 +9145,28 @@ a:hover, a:focus {
   margin: auto;
 }
 
-.metering-form__block {
-  position: relative;
-}
-
 .metering-form__block label {
   margin: 0 0 10px 18px;
   display: block;
 }
 
-.metering-form__input {
+.metering-form__valid {
   position: relative;
+}
+
+.metering-form__valid .error {
+  color: red;
+  font-size: 14px;
+}
+
+.metering-form__valid #user_name-error,
+.metering-form__valid #user_phone-error {
+  position: absolute;
+  left: 18px;
+  bottom: -24px;
+}
+
+.metering-form__input {
   height: 69px;
   -webkit-box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.04);
           box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.04);
@@ -9195,6 +9206,22 @@ a:hover, a:focus {
   color: rgba(20, 20, 20, 0.5);
 }
 
+.metering-form__input-phone, .metering-form__input-name {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+.metering-form__input-phone {
+  background: url(../img/input-phone.png) no-repeat;
+}
+
+.metering-form__input-name {
+  background: url(../img/input-user.png) no-repeat;
+}
+
 .metering-form__button {
   max-width: 270px;
   height: 75px;
@@ -9220,24 +9247,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.input__phone {
-  position: absolute;
-  top: 50px;
-  right: 15px;
-  background: url(../img/input-phone.png) no-repeat;
-  width: 35px;
-  height: 35px;
-}
-
-.input__user {
-  position: absolute;
-  top: 50px;
-  right: 15px;
-  background: url(../img/input-user.png) no-repeat;
-  width: 35px;
-  height: 35px;
-}
-
 .not-found__image {
   display: block;
   margin: auto;
@@ -9252,6 +9261,31 @@ a:hover, a:focus {
   max-width: 328px;
   height: 75px;
   font-size: 16px;
+}
+
+.thancks .container {
+  position: relative;
+}
+
+.thancks-block__title {
+  margin: 55px 0 26px;
+  color: #228b22;
+  font-size: 58px;
+  font-weight: 500;
+}
+
+.thancks-block__text {
+  margin: 0 0 330px 7px;
+  color: #1a1a1a;
+  font-weight: 300;
+  font-size: 32px;
+  max-width: 420px;
+}
+
+.thancks-block__image {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer {
@@ -9404,6 +9438,12 @@ a:hover, a:focus {
   }
   .stock-item {
     margin: 0 auto 40px;
+  }
+  .thancks-block__title {
+    margin: 5px 0 20px;
+  }
+  .thancks-block__text {
+    margin: 0 0 380px 7px;
   }
 }
 
@@ -9575,6 +9615,28 @@ a:hover, a:focus {
   .metering-wrap {
     margin: 50px auto 0;
   }
+  .thancks-block__image {
+    position: static;
+  }
+  .thancks-block__title {
+    margin: 5px auto 15px;
+    font-size: 48px;
+    text-align: center;
+  }
+  .thancks-block__text {
+    font-size: 26px;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  .thancks-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 810px) {
@@ -9679,6 +9741,15 @@ a:hover, a:focus {
 }
 
 @media (max-width: 500px) {
+  .thancks-block__title {
+    margin: 0 0 15px;
+    font-size: 30px;
+  }
+  .thancks-block__text {
+    font-size: 22px;
+    max-width: 300px;
+    margin: 0 0 20px 0;
+  }
   .light-title {
     font-size: 20px;
   }
@@ -9746,14 +9817,21 @@ a:hover, a:focus {
     height: 52px;
   }
   .metering-form__input {
-    margin: 0 0 20px;
+    margin: 0 0 25px;
+  }
+  .metering-form__input-phone, .metering-form__input-name {
+    top: 10px;
   }
   .metering-form__button {
     max-width: 240px;
     height: 50px;
+    margin-top: 30px;
   }
   .metering-form__politick {
     margin: 0 auto 15px;
+  }
+  .metering-form__block label {
+    margin: 0 0 5px 10px;
   }
   .metering-block__title {
     font-size: 20px;
@@ -9792,12 +9870,20 @@ a:hover, a:focus {
   }
   .metering-form__input {
     max-width: 240px;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
   }
   .metering-form__button {
     font-size: 12px;
     max-width: 200px;
     height: 44px;
+  }
+  .metering-form__block label {
+    margin: 0 0 0 20px;
+  }
+  .metering-form__valid #user_name-error,
+  .metering-form__valid #user_phone-error {
+    left: 35px;
+    bottom: -20px;
   }
   .metering-block__title, .metering-block__text {
     font-size: 18px;

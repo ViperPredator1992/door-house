@@ -704,16 +704,20 @@
                 <div class="metering-block">
                     <h3 class="metering-block__title">Оставьте контактные данные</h3>
                     <p class="metering-block__text">в ближайшее время с вами свяжется специалист</p>
-                    <form action="#" class="metering-form" method="POST">
+                    <form action="#" class="metering-form" id="metering-form" method="POST">
                         <div class="metering-form__block">
                             <label>Ваш номер телефона</label>
-                            <input type="tel" class="metering-form__input input" placeholder="+7 988 888 88 88" required>
-                            <div class="input__phone"></div>
+                            <div class="metering-form__valid">
+                                <input type="tel" class="metering-form__input input" name="user_phone" placeholder="+7 988 888 88 88" required>
+                                <div class="metering-form__input-phone"></div>
+                            </div>
                         </div>
                         <div class="metering-form__block">
                             <label>Как к вам обращаться</label>
-                            <input type="tel" class="metering-form__input input" placeholder="Евгений" required>
-                            <div class="input__user"></div>
+                            <div class="metering-form__valid">
+                                <input type="tel" class="metering-form__input input" name="user_name" placeholder="Евгений" required>
+                                <div class="metering-form__input-name"></div>
+                            </div>
                         </div>
                         <button class="metering-form__button button" type="submit">вызвать замерщика</button>
                         <a href="#" class="metering-form__politick">Отправляя данную форму вы <span> соглашаетесь 

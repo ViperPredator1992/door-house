@@ -33,7 +33,13 @@
             font-size: 18px
     .stock
         &-item
-            margin: 0 auto 40px            
+            margin: 0 auto 40px    
+    .thancks
+        &-block
+            &__title
+                margin: 5px 0 20px
+            &__text
+                margin: 0 0 380px 7px        
 @media (max-width: 1190px)
     .menu
         &-list
@@ -178,6 +184,21 @@
             margin: 50px auto 0  
         &-wrap      
             margin: 50px auto 0 
+    .thancks
+        &-block
+            &__image
+                position: static
+            &__title
+                margin: 5px auto 15px
+                font-size: 48px
+                text-align: center
+            &__text
+                font-size: 26px
+                text-align: center
+                margin: 0 0 40px 0
+            &s
+                flex-direction: column
+                align-items: center
 @media (max-width: 810px)
     .stores
         &-box
@@ -260,6 +281,15 @@
         &-wrap
             margin: 20px auto 0
 @media (max-width: 500px)
+    .thancks
+        &-block
+            &__title
+                margin: 0 0 15px
+                font-size: 30px
+            &__text
+                font-size: 22px
+                max-width: 300px
+                margin: 0 0 20px 0
     .light-title
         font-size: 20px
     .section-top
@@ -311,12 +341,19 @@
             &__input
                 height: 52px
             &__input
-                margin: 0 0 20px
+                margin: 0 0 25px
+                &-phone,
+                &-name
+                    top: 10px
             &__button
                 max-width: 240px
                 height: 50px
+                margin-top: 30px
             &__politick
                 margin: 0 auto 15px
+            &__block
+                label
+                    margin: 0 0 5px 10px
         &-block
             &__title
                 font-size: 20px
@@ -347,11 +384,19 @@
             max-width: 260px
             &__input
                 max-width: 240px
-                margin: 0 auto 15px
+                margin: 0 auto 20px
             &__button
                 font-size: 12px
                 max-width: 200px
                 height: 44px
+            &__block
+                label
+                    margin: 0 0 0 20px
+            &__valid
+                #user_name-error,
+                #user_phone-error
+                    left: 35px
+                    bottom: -20px
         &-block
             &__title,
             &__text
