@@ -9029,6 +9029,215 @@ a:hover, a:focus {
   display: block;
 }
 
+.stock {
+  padding: 40px 0 0;
+}
+
+.stock-item {
+  max-width: 349px;
+  padding: 9px 7px 7px 7px;
+  -webkit-box-shadow: 5px 9px 23px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 9px 23px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.stock-block {
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  padding-bottom: 33px;
+}
+
+.stock-block__image {
+  width: 336px;
+  margin: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.stock-block__title {
+  margin: 27px 0 25px 22px;
+  height: 64px;
+  overflow: hidden;
+  color: #111111;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.stock-block__text {
+  color: #1a1a1a;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 48px 20px;
+  overflow: hidden;
+  height: 72px;
+}
+
+.stock-block__link {
+  max-width: 210px;
+  height: 61px;
+  margin: auto;
+}
+
+.metering {
+  background: url(../img/metering.jpg) center no-repeat;
+  min-height: 959px;
+  background-size: cover;
+}
+
+.metering .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.metering__title {
+  color: #1f1f1f;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 56px;
+  max-width: 490px;
+  margin: 163px auto 0 0;
+}
+
+.metering__title span {
+  color: #33932f;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.metering-wrap {
+  margin: 163px 0 0;
+  max-width: 418px;
+  width: 100%;
+  -webkit-box-shadow: 5px 8px 16px 2px rgba(0, 0, 0, 0.09);
+          box-shadow: 5px 8px 16px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 9px 10px 9px;
+}
+
+.metering-block {
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+}
+
+.metering-block__title {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 34px 0 0;
+}
+
+.metering-block__text {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: normal;
+}
+
+.metering-form {
+  max-width: 320px;
+  margin: auto;
+}
+
+.metering-form__block {
+  position: relative;
+}
+
+.metering-form__block label {
+  margin: 0 0 10px 18px;
+  display: block;
+}
+
+.metering-form__input {
+  position: relative;
+  height: 69px;
+  -webkit-box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+  background-color: #f3f2f2;
+  border: none;
+  margin: 0 0 34px;
+  display: block;
+  padding: 0 60px 0 20px;
+}
+
+.metering-form__input::-webkit-input-placeholder {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+.metering-form__input:-ms-input-placeholder {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+.metering-form__input::-ms-input-placeholder {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+.metering-form__input::placeholder {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+.metering-form__button {
+  max-width: 270px;
+  height: 75px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.metering-form__politick {
+  color: #b1b1b1;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto 29px;
+}
+
+.metering-form__politick:hover {
+  color: #b1b1b1;
+}
+
+.metering-form__politick span {
+  color: #228b22;
+  text-decoration: underline;
+}
+
+.input__phone {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  background: url(../img/input-phone.png) no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.input__user {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  background: url(../img/input-user.png) no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
 .not-found__image {
   display: block;
   margin: auto;
@@ -9192,6 +9401,9 @@ a:hover, a:focus {
   }
   .footer-title {
     font-size: 18px;
+  }
+  .stock-item {
+    margin: 0 auto 40px;
   }
 }
 
@@ -9357,6 +9569,12 @@ a:hover, a:focus {
   .our-contacts {
     text-align: center;
   }
+  .metering__title {
+    margin: 50px auto 0;
+  }
+  .metering-wrap {
+    margin: 50px auto 0;
+  }
 }
 
 @media (max-width: 810px) {
@@ -9445,6 +9663,21 @@ a:hover, a:focus {
   }
 }
 
+@media (max-width: 530px) {
+  .metering__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .metering__title span {
+    font-size: 38px;
+    display: block;
+    line-height: normal;
+  }
+  .metering-wrap {
+    margin: 20px auto 0;
+  }
+}
+
 @media (max-width: 500px) {
   .light-title {
     font-size: 20px;
@@ -9482,12 +9715,92 @@ a:hover, a:focus {
   .menu-box {
     top: 70px;
   }
+  .stock-block {
+    padding-bottom: 10px;
+  }
+  .stock-block__title {
+    margin: 12px 0 15px 10px;
+    font-size: 26px;
+    height: 56px;
+  }
+  .stock-block__text {
+    margin: 0 0 30px 10px;
+    font-size: 16px;
+    line-height: normal;
+    padding-right: 5px;
+    height: 58px;
+  }
+}
+
+@media (max-width: 425px) {
+  .metering {
+    min-height: 880px;
+  }
+}
+
+@media (max-width: 400px) {
+  .metering {
+    min-height: 730px;
+  }
+  .metering-form__input {
+    height: 52px;
+  }
+  .metering-form__input {
+    margin: 0 0 20px;
+  }
+  .metering-form__button {
+    max-width: 240px;
+    height: 50px;
+  }
+  .metering-form__politick {
+    margin: 0 auto 15px;
+  }
+  .metering-block__title {
+    font-size: 20px;
+    margin: 20px 0 0;
+  }
+  .metering-block__text {
+    font-size: 20px;
+    margin: 0 auto 25px;
+    max-width: 260px;
+  }
+  .metering-form {
+    max-width: 280px;
+  }
+  .input__phone, .input__user {
+    top: 42px;
+  }
 }
 
 @media (max-width: 375px) {
   .cart {
     top: 55px;
     right: 25px;
+  }
+  .metering__title {
+    font-size: 24px;
+    line-height: normal;
+  }
+  .metering__title span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .metering-form {
+    max-width: 260px;
+  }
+  .metering-form__input {
+    max-width: 240px;
+    margin: 0 auto 15px;
+  }
+  .metering-form__button {
+    font-size: 12px;
+    max-width: 200px;
+    height: 44px;
+  }
+  .metering-block__title, .metering-block__text {
+    font-size: 18px;
   }
 }
 
