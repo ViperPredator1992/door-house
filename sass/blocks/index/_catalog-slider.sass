@@ -1,0 +1,116 @@
+.catalog-slider
+    position: relative
+    &::before
+        content: ''
+        background: url(../img/main-right-bg.png) no-repeat
+        max-width: 701px
+        width: 100%
+        min-height: 717px
+        position: absolute
+        top: 0
+        right: 0
+    &::after
+        content: ''
+        background: url(../img/main-left-bg.png) no-repeat
+        max-width: 604px
+        width: 100%
+        min-height: 598px
+        position: absolute
+        left: 0
+        bottom: 0
+    &-section
+        padding: 140px 0 160px
+    &__title
+        margin: 0 0 74px
+        span
+            font-weight: bold
+            color: $darkGreen
+    &__button
+        position: relative
+        z-index: 5
+        margin: 0
+        font-size: 16px
+        max-width: 206px
+        height: 55px
+        box-shadow: 2px 9px 16px 2px rgba(0, 0, 0, 0.08)
+        &:first-child
+            background-color: $darkWhite
+            background-image: none
+            margin-right: 30px  
+        &s
+            justify-content: center
+            margin-bottom: 80px 
+.product                 
+    &-slide
+        &.slick-slider
+            z-index: 10
+        &__item
+            position: relative
+            z-index: 10
+            background-color: $white
+            max-width: 255px
+            width: 100%
+            padding: 8px
+            box-shadow: 2px 9px 16px 2px rgba(0, 0, 0, 0.09)
+            border-radius: 10px
+            margin: 0 15px 25px
+        &__radius
+            border-radius: 10px
+            border: 1px solid #e8e8e8
+            text-align: center
+        &__image
+            margin: 17px auto 23px
+            display: block
+            width: 137px
+        &__name
+            display: block
+            color: $headBlack
+            font-size: 18px
+            font-weight: 500
+            margin: 0
+        &__type
+            margin: 10px 0 11px
+            color: #c2c1c1
+            font-size: 16px
+            font-weight: 300
+    &-prices
+        justify-content: center
+        margin-bottom: 15px
+        &__new
+            color: $darkGreen
+            font-size: 18px
+            font-weight: 500
+        &__old
+            color: #c6c5c5
+    &-arrows
+        margin-top: 50px
+        justify-content: center
+        &__prev,
+        &__next
+            cursor: pointer
+            width: 10px
+            height: 16px 
+            padding: 19px 31px
+            border-radius: 10px   
+            background-color: #f3f2f2 !important
+            transition: .3s
+            &:hover
+                background-color: #f8c44b !important
+        &__prev
+            margin-right: 30px
+            background: url(../img/prev-arrow.png) center no-repeat
+        &__next          
+            background: url(../img/next-arrow.png) center no-repeat
+.find-out
+    max-width: 162px
+    height: 46px
+    font-size: 10px
+    margin-bottom: 22px
+.one-click
+    color: #1f1f1f
+    font-size: $headBlack
+    font-weight: 500
+    text-decoration: underline
+    text-transform: uppercase
+    margin-bottom: 30px
+    
