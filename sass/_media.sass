@@ -55,7 +55,58 @@
             &__title
                 font-size: 36px
                 max-width: 450px
-                line-height: normal                      
+                line-height: normal  
+    .salon
+        &-text
+            left: 205px
+        &-block
+            margin-bottom: 40px
+            &__address
+                font-size: 20px
+            &__open
+                font-size: 16px
+            &__image
+                margin: 0 auto 20px   
+        &-box
+            &__text
+                font-size: 18px 
+                max-width: 230px
+                left: 64%
+    .main-about-bottom
+        padding-bottom: 100px
+        .container
+            top: -260px  
+    .bottom
+        &-block
+            max-width: 200px
+            &__text
+                font-size: 20px 
+    .from-us
+        &-left 
+            .from
+                &-item
+                    margin: 0 30px 40px auto                             
+        &-right 
+            .from
+                &-item
+                    margin: 0 auto 40px 30px
+    .variety-doors
+        &__title 
+            margin: 0 0 50px 50px
+    .questions
+        &-form
+            max-width: 320px
+            &__block
+                margin-bottom: 30px
+                &:first-child
+                    margin-right: 0
+                &s
+                    margin-bottom: 0
+                    flex-direction: column  
+        &__subtitle
+            font-size: 20px 
+        &__title
+            margin: 0 0 10px                         
 @media (max-width: 1190px)
     .menu
         &-list
@@ -234,11 +285,71 @@
                 top: 190px
             &__title
                 margin: 0 0 30px 0
+    .main-about
+        &__title
+            margin: 0 0 70px
+    .salon
+        &-block
+            margin-bottom: 55px
+        &-box
+            &es
+                display: none
+        &-text
+            text-align: center
+            left: 190px
+    .main-about-bottom 
+        padding-bottom: 550px
+        .container
+            top: 0
+    .bottom-block
+        margin: 0 auto 25px
+    .from-us
+        &-img
+            &::after
+                display: none
+        &__title
+            margin: 0 0 40px
+        &-left 
+            .from
+                &-item
+                    margin: 0 auto 40px
+        &-right 
+            .from
+                &-item
+                    margin: 0 auto 40px
+    .manufacturer
+        padding: 50px 0 10px
+        &::before
+            display: none
+        &__title
+            margin: 0 0 50px
+    .variety-doors
+        &__title
+            text-align: center
+            margin: 0 0 30px
+    .questions
+        &-img
+            display: none
+        &__title,
+        &__subtitle
+            text-align: center
+        &-form
+            margin: 0 auto 30px
+    .callback
+        max-width: 360px
+        margin: auto
 @media (max-width: 810px)
     .stores
         &-box
             padding: 15px
             left: 0
+@media (max-width: 779px)
+    .product
+        &-arrows
+            margin-top: 30px
+        &-slide
+            &.slick-slider
+                max-width: 570px
 @media (max-width: 767px)
     .catalog
         &-slider
@@ -248,12 +359,6 @@
                 margin: 0 0 30px
             &__buttons
                 margin: 0 0 40px
-    .product
-        &-arrows
-            margin-top: 30px
-        &-slide
-            &.slick-slider
-                max-width: 570px
     .header
         &-center
             padding: 15px 0
@@ -318,7 +423,27 @@
                 padding-bottom: 25px   
     .breadcrumbs
         display: none  
+    .salon
+        &-text
+            left: auto
+    .main-about
+        min-height: auto
+        &::before
+            display: none
+    .main-about-bottom 
+        padding-bottom: 50px
+        .container
+            position: relative
+    .from-us
+        padding: 40px 0
+        &__title
+            font-size: 32px
+    .variety-doors
+        &-bottom
+            margin-top: 50px
 @media (max-width: 690px)
+    .salon-text
+        display: none
     .main
         min-height: 440px
         &-section
@@ -339,7 +464,11 @@
                         left: 60px
             &__text
                 margin: 0 auto 50px
-                text-align: center                          
+                text-align: center  
+    .manufacturer
+        padding: 30px 0 10px
+        &__title
+            font-size: 32px                        
 @media (max-width: 530px)
     .catalog
         &-slider
@@ -350,6 +479,8 @@
                 &:first-child
                     margin-right: 0
                     margin-bottom: 20px
+            &__link
+                margin: 40px auto 0
     .product
         &-slide
             &.slick-slider
@@ -358,6 +489,7 @@
         &__title
             font-size: 30px
             text-align: center
+            line-height: normal
             span
                 font-size: 38px
                 display: block
@@ -370,6 +502,8 @@
                 &s
                     &::before
                         display: none
+    .title
+        font-size: 30px 
 @media (max-width: 500px)
     .thancks
         &-block
@@ -422,8 +556,45 @@
                 padding-right: 5px    
                 height: 58px
 @media (max-width: 425px)
+    .questions
+        padding: 0 0 40px
+        &__subtitle
+            font-size: 16px
+    .questions
+        &-form
+            &__block
+                width: auto
+    .callback
+        max-width: 300px
+    .call
+        &__phone
+            font-size: 24px
     .metering
         min-height: 880px
+    .catalog-slider
+        &__link
+            height: 52px
+            max-width: 220px
+            font-size: 12px 
+    .main-about
+        &__title
+            margin: 15px 0 30px
+    .salon
+        &-block 
+            margin-bottom: 40px 
+    .from-us
+        padding: 0 0 10px
+        &__title
+            font-size: 26px 
+    .manufacturer
+        &-item 
+            max-width: 220px
+            margin: 0 auto 30px
+            &__image
+                margin-bottom: 10px
+        &__title
+            font-size: 26px  
+            margin: 0 0 30px
 @media (max-width: 400px)
     .metering
         min-height: 730px
@@ -459,13 +630,14 @@
         &__user
             top: 42px            
 @media (max-width: 375px)
+    .call
+        font-size: 16px
     .cart
         top: 55px
         right: 25px
     .metering
         &__title
             font-size: 24px
-            line-height: normal
             span
                 font-size: 30px 
     .main

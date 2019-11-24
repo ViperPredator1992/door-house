@@ -1,0 +1,41 @@
+.from-us
+    padding: 60px 0
+    &-img
+        position: relative
+        &::after
+            content: ''
+            background: url(../img/from-us.png) right no-repeat
+            max-width: 554px
+            min-height: 756px
+            width: 100%
+            position: absolute
+            top: -300px
+            right: 0
+    &__title
+        margin: 0 0 90px
+        &-mini
+            display: block
+    &-left
+        .from
+            &-item
+                margin: 0 60px 40px auto
+    &-right
+        .from
+            &-item
+                margin: 0 auto 40px 60px
+.from
+    &-item
+        text-align: center
+        max-width: 260px
+        margin: 0 auto 40px
+        &__image
+            height: 144px
+        &__title
+            margin: 28px 0 20px
+            color: #090303
+            +mini-title
+        &__text
+            +medium
+            margin: 0
+            color: rgba(9, 3, 3, .4)
+            line-height: 22px

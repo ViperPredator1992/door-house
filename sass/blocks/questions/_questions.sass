@@ -1,0 +1,106 @@
+.questions
+    padding: 15px 0 100px
+    &__title
+        color: #1a1a1a
+        margin: 0 0 30px
+        text-align: left
+    &__subtitle
+        margin: 0 0 50px
+        color: #1a1a1a
+        font-size: 24px
+        font-weight: 300
+        margin: 0 0 30px
+    &-form
+        max-width: 670px
+        margin-bottom: 80px
+        &__block
+            position: relative
+            width: 320px
+            &:first-child
+                margin-right: 22px
+            label
+                margin-left: 19px
+                display: block
+            &s
+                margin-bottom: 35px
+            #user_questions-error,
+            #user_phone-error
+                color: red
+                position: absolute
+                left: 20px
+                bottom: -25px
+                font-size: 14px
+        &__input
+            height: 70px  
+            box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.04)
+            border-radius: 15px
+            background-color: $darkWhite 
+            border: none
+            padding: 0 20px 
+            &::placeholder
+                color: rgba(20, 20, 20, .5)
+                font-size: 16px
+                font-weight: 500
+        &__button
+            max-width: 286px
+            height: 75px
+            font-size: 16px
+    &-img
+        position: relative
+    &-bg
+        background: url(../img/men.png) no-repeat
+        max-width: 544px
+        width: 100%
+        min-height: 700px     
+        position: absolute  
+        bottom: -100px
+        right: 0 
+        &__block
+            background: url(../img/nameplate.png) no-repeat
+            max-width: 371px
+            height: 109px
+            position: absolute
+            right: 0
+            left: -60px
+            bottom: 50px
+            z-index: 5
+        &__nameplate
+            color: $headBlack
+            font-weight: 300
+            font-size: 18px
+            margin: 0
+            padding: 24px 0 0 45px
+            span
+                display: block   
+                font-weight: 500
+.security-policy
+    font-size: 14px
+    font-weight: 300
+    color: #b1b1b1
+    max-width: 380px
+    margin: 0 auto 15px
+    &:hover
+        color: #b1b1b1
+    span
+        color: $darkGreen
+        text-decoration: underline
+.call
+    font-weight: 500
+    color: $headBlack
+    font-size: 18px
+    margin-bottom: 5px
+    &__phone   
+        color: $darkGreen 
+        font-size: 32px   
+        display: inline-block
+        margin-left: 10px
+        &:hover
+            color: $darkGreen 
+    &__email
+        display: inline-block
+        margin-left: 10px
+        color: $headBlack
+        &:hover
+            color: $headBlack
+    .our-socials
+        margin-left: 10px

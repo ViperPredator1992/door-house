@@ -80,7 +80,7 @@ $(document).ready(function () {
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 780,
             settings: {
               slidesToShow: 2
             }
@@ -93,5 +93,25 @@ $(document).ready(function () {
           }
         ]
       });
+
+      $('#questions-form').validate({
+        rules: {
+          user_questions: {
+            required: true
+          },
+          user_phone: {
+              required: true
+          }
+        },
+        messages: {
+            user_questions: {
+                required: "Заполните пожалуйста поле"
+            },
+            user_phone: {
+                required: "Заполните пожалуйста поле"
+            }
+        },
+        errorElement: "div"
+    });
     
 });
