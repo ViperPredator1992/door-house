@@ -1,4 +1,19 @@
 @media (max-width: 1199px)
+    .cooperation
+        padding: 40px 0
+        &-left
+            max-width: 600px
+    .in-number
+        &-block
+            &s
+                max-width: 680px
+                margin: auto
+    .about
+        &-block
+            &__text
+                font-size: 20px
+                line-height: normal
+                max-width: 140px
     .menu
         &-list
             &__link
@@ -144,6 +159,14 @@
             &::after
                 display: none                                   
 @media (max-width: 991px)
+    .cooperation
+        &-right
+            display: none
+        &-left
+            margin: auto
+    .about
+        &-block
+            margin: 0 auto 40px
     .entrance-work
         padding: 30px 0
         &::before
@@ -380,7 +403,10 @@
             margin-bottom: 30px 
         &-left 
             .excellence
-                margin: 0 auto 30px   
+                margin: 0 auto 30px
+    .about
+        &-left
+            margin: 0 auto 20px
 @media (max-width: 810px)
     .stores
         &-box
@@ -490,6 +516,14 @@
             margin: 0 0 50px
         &__link
             margin: 30px auto 0
+    .in-number
+        padding: 0 0 50px
+        &__title
+            margin: 0 0 40px
+        &-block
+            margin-bottom: 30px
+            &s
+                max-width: 460px
 @media (max-width: 690px)
     .salon-text
         display: none
@@ -517,8 +551,15 @@
     .manufacturer
         padding: 30px 0 10px
         &__title
-            font-size: 32px                        
+            font-size: 32px 
+    .about
+        &__title 
+            span
+                display: block                       
 @media (max-width: 530px)
+    .about
+        &__directions
+            margin: 30px 0
     .pagination
         max-width: 280px
         &__link
@@ -558,6 +599,12 @@
     .title
         font-size: 30px 
 @media (max-width: 500px)
+    .in-number
+        padding: 0 0 25px
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
     .thancks
         &-block
             &__title
@@ -677,6 +724,14 @@
             max-width: 260px
             height: 58px
 @media (max-width: 400px)
+    .cooperation
+        padding: 15px 0 0
+        &-left
+            flex-direction: column
+            align-items: center
+            &__image
+                margin-right: 0
+                margin-bottom: 30px
     .metering
         min-height: 730px
         &-form
@@ -726,6 +781,10 @@
         &-right
             &__title
                 font-size: 22px
+    .in-number
+        &__title
+            span
+                display: block
 @media (max-width: 350px)
     .metering
         &-form
