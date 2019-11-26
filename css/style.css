@@ -10693,8 +10693,128 @@ a:hover, a:focus {
   font-size: 14px;
 }
 
+.map {
+  background: url(../img/map.jpg) center no-repeat;
+  max-width: 979px;
+  height: 504px;
+  border-radius: 10px;
+  margin: auto;
+  background-size: cover;
+}
+
 .map-title {
   margin: 80px 0 50px;
+}
+
+.install__title {
+  text-align: left;
+  margin: 0 0 30px;
+}
+
+.install p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #1a1a1a;
+  line-height: 30px;
+  margin: 0 0 20px;
+}
+
+.install p strong {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.install-price {
+  margin-bottom: 40px;
+}
+
+.install-price__title {
+  margin: 40px 0 60px;
+}
+
+.install-block__title {
+  text-align: center;
+  color: #131313;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+.install-text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.install-text a {
+  font-weight: 500;
+  color: #131313;
+  display: inline-block;
+}
+
+.install-text a:hover {
+  color: #131313;
+}
+
+.install-box {
+  -webkit-box-shadow: 5px 8px 23px 1px rgba(0, 0, 0, 0.13);
+          box-shadow: 5px 8px 23px 1px rgba(0, 0, 0, 0.13);
+}
+
+.install-box__head {
+  width: 100%;
+  background-color: #f3f2f2;
+  padding: 26px 83px 26px 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.install-box__head span {
+  color: #131313;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.door-list {
+  height: 400px;
+  overflow-y: scroll;
+  margin-top: 30px;
+}
+
+.door-list__item {
+  max-width: 435px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 28px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+.door-list__item span {
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.door-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.door-list::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-color: #000;
+  background-color: #f3f2f2;
+}
+
+.door-list::-webkit-scrollbar-track {
+  border-width: 1px 1px 1px 2px;
 }
 
 .footer {
@@ -10820,6 +10940,22 @@ a:hover, a:focus {
 }
 
 @media (max-width: 1199px) {
+  .install-box__head {
+    padding: 20px 60px 20px 20px;
+  }
+  .install-box__head span {
+    font-size: 20px;
+  }
+  .door-list {
+    height: 268px;
+  }
+  .door-list__item {
+    max-width: 370px;
+    margin-left: 20px;
+  }
+  .door-list__item span {
+    font-size: 20px;
+  }
   .payment-item {
     margin: 0 auto 25px;
   }
@@ -11003,6 +11139,15 @@ a:hover, a:focus {
 }
 
 @media (max-width: 991px) {
+  .door-list__item {
+    max-width: 90%;
+  }
+  .install-block {
+    margin-bottom: 30px;
+  }
+  .install-block__title {
+    margin: 0 0 25px;
+  }
   .delivery__title {
     margin: 0 0 30px;
   }
@@ -11336,6 +11481,19 @@ a:hover, a:focus {
 }
 
 @media (max-width: 767px) {
+  .install p {
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 0 15px;
+  }
+  .install-price__title {
+    margin: 40px 0 20px;
+  }
+  .map {
+    background-size: contain;
+    height: 300px;
+    max-width: 500px;
+  }
   .catalog-slider-section {
     padding: 70px 0 50px;
   }
@@ -11512,6 +11670,13 @@ a:hover, a:focus {
 }
 
 @media (max-width: 530px) {
+  .install-block__title {
+    font-size: 26px;
+    margin: 0 0 15px;
+  }
+  .install-price {
+    margin-bottom: 20px;
+  }
   .map-title {
     margin: 50px 0 20px;
   }
@@ -11653,6 +11818,15 @@ a:hover, a:focus {
 }
 
 @media (max-width: 425px) {
+  .install-box__head {
+    padding: 20px;
+  }
+  .install-box__head span {
+    font-size: 18px;
+  }
+  .map {
+    height: 200px;
+  }
   .entrance-doors__title {
     font-size: 22px;
   }
@@ -11796,6 +11970,26 @@ a:hover, a:focus {
 }
 
 @media (max-width: 375px) {
+  .install-block__title {
+    font-size: 22px;
+  }
+  .install-box__head {
+    padding: 15px;
+  }
+  .install-box__head span {
+    font-size: 16px;
+  }
+  .door-list {
+    height: 180px;
+    margin-top: 20px;
+  }
+  .door-list__item {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+  .door-list__item span {
+    font-size: 18px;
+  }
   .call {
     font-size: 16px;
   }

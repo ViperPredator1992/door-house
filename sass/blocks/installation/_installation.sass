@@ -1,0 +1,72 @@
+.install
+    &__title
+        text-align: left
+        margin: 0 0 30px
+    p
+        font-weight: 300
+        font-size: 24px
+        color: #1a1a1a
+        line-height: 30px
+        margin: 0 0 20px
+        strong
+            text-decoration: underline
+            font-weight: 500
+    &-price
+        margin-bottom: 40px
+        &__title
+            margin: 40px 0 60px
+    &-block
+        &__title
+            text-align: center
+            color: #131313
+            font-size: 32px
+            font-weight: 500
+            margin: 0 0 40px
+    &-text
+        text-align: center
+        font-weight: 300
+        font-size: 18px
+        a
+            font-weight: 500
+            color: #131313
+            display: inline-block
+            &:hover
+                color: #131313
+    &-box
+        box-shadow: 5px 8px 23px 1px rgba(0, 0, 0, 0.13)
+        &__head
+            width: 100%
+            background-color: $darkWhite
+            padding: 26px 83px 26px 25px
+            justify-content: space-between
+            span
+                color: #131313
+                font-size: 24px
+                font-weight: 500
+.door
+    &-list
+        height: 400px
+        overflow-y: scroll 
+        margin-top: 30px  
+        &__item
+            max-width: 435px
+            width: 100%
+            margin-bottom: 15px
+            display: flex
+            margin-left: 28px
+            justify-content: space-between
+            border-bottom: 1px solid rgba(135, 135, 135, .2)
+            span
+                color: rgba(19, 19, 19, .6)
+                font-size: 24px
+                font-weight: 300 
+                display: inline-block 
+.door-list::-webkit-scrollbar
+	width: 12px
+.door-list::-webkit-scrollbar-thumb
+	border-width: 1px 1px 1px 2px
+	border-color: #000
+	background-color: $darkWhite
+.door-list::-webkit-scrollbar-track
+	border-width: 1px 1px 1px 2px
+             
