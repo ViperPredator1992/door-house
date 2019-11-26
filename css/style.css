@@ -10588,6 +10588,115 @@ a:hover, a:focus {
   font-weight: 300;
 }
 
+.delivery__title {
+  margin: 0 0 100px;
+}
+
+.delivery__image {
+  display: block;
+  margin: 0 auto 80px;
+}
+
+.delivery-right {
+  margin-bottom: 80px;
+}
+
+.delivery-right p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+  color: #171717;
+  margin: 0 0 30px;
+}
+
+.delivery-right p strong {
+  font-weight: 500;
+}
+
+.delivery-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery-right ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #171717;
+  position: relative;
+  padding-left: 30px;
+}
+
+.delivery-right ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #228b22;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.payment-title {
+  margin: 0 0 80px;
+}
+
+.payment-title span {
+  display: block;
+}
+
+.payment-item {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 220px;
+}
+
+.payment-item__image {
+  margin: 0 auto 10px;
+  display: block;
+  height: 80px;
+}
+
+.payment-item__text {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+  height: 104px;
+}
+
+.payment-block .metering-wrap {
+  margin: 0 !important;
+}
+
+.payment-block .metering-block__title {
+  margin: 40px 0 30px !important;
+  font-size: 22px !important;
+}
+
+.payment-block .metering-form__block label {
+  color: rgba(20, 20, 20, 0.4);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 10px 25px;
+}
+
+.payment-block .metering-form__valid {
+  max-width: 290px;
+  margin: auto;
+}
+
+.payment-block .metering-form__button {
+  font-size: 14px;
+}
+
+.map-title {
+  margin: 80px 0 50px;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #f3f2f2;
@@ -10711,6 +10820,23 @@ a:hover, a:focus {
 }
 
 @media (max-width: 1199px) {
+  .payment-item {
+    margin: 0 auto 25px;
+  }
+  .payment-block .metering-wrap {
+    margin: 50px auto 0 !important;
+  }
+  .payment-block .metering-block__title {
+    max-width: 290px;
+    margin: 30px auto !important;
+  }
+  .payment-block .metering-form__valid {
+    max-width: none;
+  }
+  .delivery-right p {
+    line-height: 28px;
+    margin: 0 0 15px;
+  }
   .cooperation {
     padding: 40px 0;
   }
@@ -10877,6 +11003,18 @@ a:hover, a:focus {
 }
 
 @media (max-width: 991px) {
+  .delivery__title {
+    margin: 0 0 30px;
+  }
+  .delivery__image {
+    margin: 0 auto 30px;
+  }
+  .delivery-right {
+    margin-bottom: 50px;
+  }
+  .payment-item__text {
+    height: auto;
+  }
   .cooperation-right {
     display: none;
   }
@@ -11367,9 +11505,29 @@ a:hover, a:focus {
   .about__title span {
     display: block;
   }
+  .payment-title {
+    font-size: 34px;
+    margin: 0 0 40px;
+  }
 }
 
 @media (max-width: 530px) {
+  .map-title {
+    margin: 50px 0 20px;
+  }
+  .delivery__title {
+    margin: 0 0 15px;
+  }
+  .delivery__image {
+    margin: 0 0 15px;
+  }
+  .delivery-right p {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .delivery-right ul li {
+    margin-bottom: 5px;
+  }
   .about__directions {
     margin: 30px 0;
   }
