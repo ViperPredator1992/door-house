@@ -124,5 +124,4 @@ $(document).ready(function () {
     $('.product-tab:first').addClass('product-tab-active');
     $('.tab:first').css('display', 'block');
 
-
 });
