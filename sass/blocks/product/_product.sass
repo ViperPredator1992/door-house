@@ -1,0 +1,192 @@
+.product
+    &-class
+       .questions
+           &__title
+               max-width: 550px 
+    &-left
+        &__image
+            display: block
+            border-radius: 10px
+            max-width: 296px
+    &-center
+        margin-left: 35px
+        &__title
+            margin: 7px 0 20px
+            font-weight: 300
+            font-size: 24px
+            color: #1a1a1a
+            line-height: 32px
+            span
+                font-weight: 500
+                display: block
+                text-transform: uppercase
+    &-list
+        &__item
+            color: #1a1a1a
+            font-size: 18px
+            font-weight: 300
+            margin-bottom: 10px
+            span
+                &::before
+                    content: url(../img/chek-in.png)
+                    display: inline-block
+                    vertical-align: middle
+                    margin-right: 5px
+            &:last-child
+                margin-bottom: 40px
+    &-calc
+        &__title
+            color: #1a1a1a
+            font-size: 20px
+            font-weight: 500
+            margin: 0 0 20px
+        &__size,
+        &__box,
+        &__platband,
+        &__additional
+            margin-bottom: 15px
+            &-text
+                max-width: 95px
+                width: 100%
+                margin-right: 15px
+                color: #1a1a1a
+                font-size: 20px
+                font-weight: 500
+            &-number
+                padding: 0 25px
+                width: 270px
+                height: 45px
+                border: 1px solid rgba(0, 0, 0, 0.3)
+                &::placeholder
+                    color: #878787
+                    font-size: 16px
+                    font-weight: 500
+                    text-transform: uppercase
+                    letter-spacing: 1.6px
+            &-image
+                margin-left: 15px
+                display: inline-block
+    &-price
+        margin-bottom: 40px
+        &__text
+            color: #1a1a1a
+            font-size: 20px
+            font-weight: 500
+            display: inline-block
+            margin-right: 58px
+        &__total
+            color: #1a1a1a
+            font-size: 24px
+            font-weight: bold
+    &-count
+        margin-top: 15px
+        &__text
+            max-width: 95px
+            width: 100%
+            margin-right: 15px
+            color: #1a1a1a
+            font-size: 20px
+            font-weight: 500
+    &-quantity
+        width: 105px
+        height: 40px
+        border: 1px solid #dedede
+        justify-content: space-between
+        &__minus,
+        &__plus
+            font-size: 20px
+            color: #bababa
+            display: inline-block
+            vertical-align: baseline
+            padding: 5px 10px
+            cursor: pointer
+        &__input
+            width: 37px
+            color: #171717
+            font-size: 14px
+            font-weight: 500
+            border: none
+            text-align: center
+            font-size: 18px
+    &-box
+        background: url(../img/rec.png) no-repeat
+        min-width: 368px
+        min-height: 587px
+        margin-left: 10px
+        padding-top: 90px
+        &__block
+            margin: 0 auto 15px
+            display: flex
+            align-items: center
+            max-width: 240px
+        &__text
+            max-width: 175px
+            color: #111111
+            font-size: 18px
+            font-weight: 500
+            line-height: 24px
+            margin: 0 0 0 35px
+    &-right
+        margin-top: -40px 
+    &-btn
+        margin: 0
+        max-width: 270px
+        height: 75px
+        font-size: 16px
+        background-image: linear-gradient(to top, #d1d0d0 0%, #eceded 100%)
+    &-button
+        margin: 0 25px
+        &__cart
+            min-width: 270px
+            height: 75px
+            font-size: 16px       
+        &__click
+            margin-top: 20px
+            text-align: center
+            color: $headBlack
+            font-size: 12px
+            font-weight: 500
+            text-decoration: underline
+            text-transform: uppercase
+            &:hover
+                color: $headBlack
+                text-decoration: underline
+    &-tab
+        color: #838383
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
+        margin-right: 15px
+        padding-bottom: 5px
+        border-bottom: 2px solid transparent
+        &-active
+            color: #141414
+            border-bottom: 2px solid #171717
+        &:hover
+            cursor: pointer
+            border-bottom: 2px solid #171717
+        &s
+            border-bottom: 1px solid #e8e8e8
+.count-and-button
+    align-items: flex-start  
+    max-width: 810px
+    margin-left: auto
+    margin-bottom: 100px          
+.tab
+    display: none
+    padding: 25px 10px 50px
+    &-list
+        &__item
+            font-size: 20px
+            margin-bottom: 10px
+            color: #838383
+            font-weight: 500
+            span
+                color: #171717
+    p
+        margin: 0
+        font-weight: 300
+        font-size: 18px
+        line-height: 26px
+
+        

@@ -1,4 +1,15 @@
 @media (max-width: 1199px)
+    .product
+        &-center
+            margin-left: 80px
+        &-right
+            display: none
+        &-btn
+            margin: 20px 60px 0 auto
+    .count-and-button
+        max-width: 570px
+    .companion
+        padding: 0 0 40px    
     .install
         &-box
             &__head 
@@ -192,6 +203,21 @@
             &::after
                 display: none                                   
 @media (max-width: 991px)
+    .product
+        &-class
+            .questions__title
+                margin: 0 auto 10px
+        &-left
+            margin: 0 auto 30px
+        &-center
+            margin-left: 0
+            max-width: 427px
+            margin: auto
+            &__title
+                text-align: center
+    .companion
+        .product-slide__item
+            margin: 0 auto 30px
     .door
         &-list
             &__item
@@ -473,6 +499,24 @@
             &.slick-slider
                 max-width: 570px
 @media (max-width: 767px)
+    .product
+        &-sides
+            flex-direction: column
+            align-items: center
+        &-count
+            margin-top: 0
+            margin-bottom: 30px
+        &-button
+            margin: 0
+        &-btn
+            margin: 20px auto 40px
+    .count-and-button
+        flex-direction: column
+        align-items: center
+        margin: auto
+    .companion
+        &__title
+            text-align: center
     .install 
         p
             font-size: 20px
@@ -625,6 +669,18 @@
         &-title
             font-size: 34px
             margin: 0 0 40px                                      
+@media (max-width: 600px)
+    .companion
+        &__title
+            font-size: 32px
+            margin: 0 0 30px
+    .product
+        &-tab
+            margin-right: 0
+            margin-bottom: 10px
+            &s
+                flex-direction: column
+                align-items: center
 @media (max-width: 530px)
     .install
         &-block
@@ -690,6 +746,28 @@
     .title
         font-size: 30px 
 @media (max-width: 500px)
+    .product
+        &-list
+            max-width: 220px
+            margin: auto
+        &-calc
+            &__size,
+            &__box,
+            &__platband,
+            &__additional
+                max-width: 300px
+                margin: 0 auto 15px
+                &-text
+                    max-width: none
+                    margin-right: 0
+                    margin-bottom: 5px
+                &-image
+                    margin-left: 8px
+                    width: 22px
+                    height: 22px
+        &-price
+            max-width: 240px
+            margin: 0 auto 20px
     .in-number
         padding: 0 0 25px
         &-block
@@ -747,6 +825,10 @@
                 padding-right: 5px    
                 height: 58px
 @media (max-width: 425px)
+    .product
+        &-calc
+            &__title
+                text-align: center
     .install
         &-box
             &__head 
@@ -903,6 +985,17 @@
             span
                 display: block
 @media (max-width: 350px)
+    .product
+        &-left
+            &__image
+                max-width: 100%
+        &-calc
+            &__size,
+            &__box,
+            &__platband,
+            &__additional
+                &-number
+                    width: 260px
     .metering
         &-form
             max-width: 260px

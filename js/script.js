@@ -114,4 +114,15 @@ $(document).ready(function () {
         errorElement: "div"
     });
     
+    $('.product-tab').not('.product-tab-active').click(function () {
+      var index = $(this).index();
+      var content = $('.tab').eq(index);
+      $(this).addClass('product-tab-active').siblings().removeClass('product-tab-active');
+      $('.tab').css('display', 'none').eq(index).css('display', 'block');
+    });
+
+    $('.product-tab:first').addClass('product-tab-active');
+    $('.tab:first').css('display', 'block');
+
+
 });
