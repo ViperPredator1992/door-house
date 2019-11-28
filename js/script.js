@@ -37,24 +37,18 @@ $(document).ready(function () {
         }
     });
 
-    $('#metering-form').validate({
-        rules: {
-            user_phone: {
-                required: true
-            },
-            user_name: {
-                required: true
-            }
-        },
-        messages: {
-            user_phone: {
-                required: "Заполните пожалуйста поле"
-            },
-            user_name: {
-                required: "Заполните пожалуйста поле"
-            }
-        },
-        errorElement: "div"
+    $('#metering').validate({
+      rules: {
+          user_phone: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
     });
 
     $('.product-slide').slick({
@@ -89,20 +83,14 @@ $(document).ready(function () {
 
       $('#questions-form').validate({
         rules: {
-          user_questions: {
-            required: true
-          },
           user_phone: {
               required: true
           }
         },
         messages: {
-            user_questions: {
-                required: "Заполните пожалуйста поле"
-            },
-            user_phone: {
-                required: "Заполните пожалуйста поле"
-            }
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          }
         },
         errorElement: "div"
     });
@@ -121,16 +109,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
               required: "Заполните пожалуйста поле"
           }
       },
@@ -141,16 +123,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
               required: "Заполните пожалуйста поле"
           }
       },
@@ -161,16 +137,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
               required: "Заполните пожалуйста поле"
           }
       },
@@ -181,16 +151,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
               required: "Заполните пожалуйста поле"
           }
       },
@@ -201,16 +165,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
               required: "Заполните пожалуйста поле"
           }
       },
@@ -221,22 +179,10 @@ $(document).ready(function () {
       rules: {
           user_phone: {
               required: true
-          },
-          user_name: {
-              required: true
-          },
-          user_text: {
-              required: true
           }
       },
       messages: {
           user_phone: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_name: {
-              required: "Заполните пожалуйста поле"
-          },
-          user_text: {
               required: "Заполните пожалуйста поле"
           }
       },

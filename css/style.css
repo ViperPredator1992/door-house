@@ -9331,7 +9331,6 @@ a:hover, a:focus {
   color: #1f1f1f;
   font-size: 16px;
   font-weight: 500;
-  text-decoration: underline;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -9484,6 +9483,7 @@ a:hover, a:focus {
 .bottom-block__image {
   display: block;
   margin: 0 auto 20px;
+  height: 120px;
 }
 
 .bottom-block__text {
@@ -10103,6 +10103,10 @@ a:hover, a:focus {
   margin: 0 0 0 auto;
 }
 
+.excel {
+  margin-bottom: 33px;
+}
+
 .service-department {
   background: url(../img/sheet3.png) center no-repeat;
   max-width: 415px;
@@ -10303,7 +10307,6 @@ a:hover, a:focus {
 .card__click {
   color: #1f1f1f;
   font-weight: 500;
-  text-decoration: underline;
   text-transform: uppercase;
   text-align: center;
   width: 150px;
@@ -10495,6 +10498,10 @@ a:hover, a:focus {
   padding: 31px 0 38px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about-block__line:hover .about-block__text {
+  text-decoration: underline;
 }
 
 .about-block__image {
@@ -11050,7 +11057,6 @@ a:hover, a:focus {
   color: #1f1f1f;
   font-size: 12px;
   font-weight: 500;
-  text-decoration: underline;
   text-transform: uppercase;
 }
 
@@ -12274,6 +12280,10 @@ a:hover, a:focus {
   .about-block {
     margin: 0 auto 40px;
   }
+  .about-right {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
   .entrance-work {
     padding: 30px 0;
   }
@@ -12586,6 +12596,9 @@ a:hover, a:focus {
 }
 
 @media (max-width: 767px) {
+  .about__directions {
+    margin-top: 50px;
+  }
   .product-sides {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -13062,6 +13075,9 @@ a:hover, a:focus {
 }
 
 @media (max-width: 425px) {
+  .about__title {
+    margin: 0 0 40px;
+  }
   .modal-click .modal-right__title {
     font-size: 16px;
   }
