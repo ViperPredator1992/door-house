@@ -1,3 +1,8 @@
+@media (max-width: 1245px)
+    .main
+        &-right
+            &::after
+                right: -30px
 @media (max-width: 1199px)
     .review
         &-block
@@ -218,6 +223,32 @@
                 .menu
                     &-inner
                         width: 100%
+@media (max-width: 1070px)
+    .modal
+        &-click
+            &-active
+                max-width: 750px
+                height: 800px
+                overflow-y: scroll
+                overflow-x: hidden
+                .modal
+                    &-radius
+                        &__title
+                            max-width: 380px
+                            margin: 20px auto 30px
+                    &-left
+                        margin: 0 auto 30px
+                    &-right
+                        margin: 0 auto
+                    &-form 
+                        .modal
+                            &-block
+                                &__button
+                                    margin: 0 auto 20px
+    .radio
+        &-list
+            &__item
+                margin-bottom: 5px
 @media (max-width: 1023px)
     .product
         &-slide
@@ -690,6 +721,46 @@
             margin-bottom: 30px
             &s
                 max-width: 460px
+@media (max-width: 710px)
+    .modal-click 
+        &-active
+            max-width: 450px
+        .modal
+            &-radius
+                &__title
+                    font-size: 20px
+            &-form
+                flex-direction: column
+                align-items: center
+                margin: 20px auto 0
+            &-list
+                max-width: 320px
+                margin: auto
+                &__item
+                    min-height: 70px
+                    flex-direction: column
+                    align-items: end
+                    margin-bottom: 8px
+                &__text
+                    min-width: auto
+                    margin: 0 0 10px
+                    font-size: 18px
+            &-right
+                &__title
+                    font-size: 18px
+                    margin-bottom: 10px
+    .radio
+        &-list
+            max-width: 320px
+            margin: auto
+            &__item label
+                font-size: 20px
+    .radio + label:before
+        top: 5px
+    .radio + label:after
+        top: 10px
+    .radio + label
+        padding: 0 0 0 25px
 @media (max-width: 690px)
     .salon-text
         display: none
@@ -887,6 +958,11 @@
                 padding-right: 5px    
                 height: 58px
 @media (max-width: 425px)
+    .modal-click 
+        .modal
+            &-right
+                &__title
+                    font-size: 16px
     .review
         &-flamp
             iframe
@@ -1013,6 +1089,39 @@
         &__user
             top: 42px            
 @media (max-width: 375px)
+    .modal-click 
+        .modal
+            &-radius
+                &__title
+                    font-size: 18px
+                    max-width: 270px
+                    line-height: normal
+                    margin: 30px auto 20px
+            &-block
+                &__image
+                    max-width: 95%
+                    margin: auto
+                    display: block
+            &-right
+                padding: 0 10px
+                &__title
+                    text-align: center
+                    max-width: 200px
+                    margin: 0 auto 10px
+            &-list
+                max-width: 280px
+                &__text
+                    font-size: 16px
+    .radio
+        &-list
+            max-width: 260px
+            &__item 
+                label
+                    font-size: 16px
+    .radio + label:before
+        top: 2px
+    .radio + label:after
+        top: 7px
     .install
         &-block
             &__title
@@ -1050,6 +1159,15 @@
         &__title
             span
                 display: block
+@media (max-width: 360px)
+    .modal
+        &-radius
+            &__title
+                max-width: 300px
+            &__text
+                padding: 0 5px
+        &-form
+            padding: 0 10px
 @media (max-width: 350px)
     .review
         &-flamp
@@ -1089,9 +1207,31 @@
             &__text
                 font-size: 18px
 
+
+@media (max-height: 810px)
+    .modal
+        &-director
+            &-active
+                height: 510px
+                overflow-y: scroll
+                overflow-x: hidden
 @media (max-height: 700px)
    .stores
        &-box
             height: 180px
+            overflow-y: scroll
+            overflow-x: hidden
+@media (max-height: 680px)
+    .modal
+        &-callback,
+        &-assembling,
+        &-bonus
+            &-active
+                height: 510px
+                overflow-y: scroll
+                overflow-x: hidden
+    .modal
+        &-active
+            height: 490px
             overflow-y: scroll
             overflow-x: hidden

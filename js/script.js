@@ -37,13 +37,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.main-right__link').click(function(){
-        var el = $(this).attr('href');
-        $('html,body').animate({
-            scrollTop: $(el).offset().top - $("header").height()}, 1000);
-        return false;
-    });
-
     $('#metering-form').validate({
         rules: {
             user_phone: {
@@ -123,5 +116,197 @@ $(document).ready(function () {
 
     $('.product-tab:first').addClass('product-tab-active');
     $('.tab:first').css('display', 'block');
+
+    $('#modal').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+
+    $('#callback').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+
+    $('#bonus').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+
+    $('#click').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+    
+    $('#assembling').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+
+    $('#director').validate({
+      rules: {
+          user_phone: {
+              required: true
+          },
+          user_name: {
+              required: true
+          },
+          user_text: {
+              required: true
+          }
+      },
+      messages: {
+          user_phone: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_name: {
+              required: "Заполните пожалуйста поле"
+          },
+          user_text: {
+              required: "Заполните пожалуйста поле"
+          }
+      },
+      errorElement: "div"
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal').removeClass('modal-active');
+    });
+
+    $('.applications__button, .main-right__link, .main-box:first-child p a, .entrance-door-box:first-child p a, .product-btn').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal').addClass('modal-active');
+    });
+
+    $('.our-links__btn').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal-callback').addClass('modal-callback-active');
+    });
+
+    $('.main-box:nth-child(2) p a, .entrance-door-box:nth-child(2) p a').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal-assembling').addClass('modal-assembling-active');
+    });
+
+    $('.nav-list__item:last-child a').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal-director').addClass('modal-director-active');
+    });
+
+    $('.offer-btn').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal-bonus').addClass('modal-bonus-active');
+    });
+
+    $('.one-click, .product-button__click, .card__click').click(function (e) {
+      e.preventDefault();
+      $('.mask').addClass('mask-active');
+      $('.modal-click').addClass('modal-click-active');
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal-click').removeClass('modal-click-active');
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal-callback').removeClass('modal-callback-active');
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal-assembling').removeClass('modal-assembling-active');
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal-director').removeClass('modal-director-active');
+    });
+
+    $('.modal-radius__close, .mask').click(function () {
+      $('.mask').removeClass('mask-active');
+      $('.modal-bonus').removeClass('modal-bonus-active');
+    });
 
 });
