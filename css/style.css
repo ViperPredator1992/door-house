@@ -11347,10 +11347,20 @@ a:hover, a:focus {
 
 .polovinkin {
   margin-bottom: 28px;
+  width: 135px;
 }
 
 .polovinkin__image {
-  width: 135px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.polovinkin:hover .polovinkin__image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .mask {
